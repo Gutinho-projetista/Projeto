@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini RPG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Mini RPG</h1>
+      <div class="stats">
+        <p>Nível: <span id="level">1</span></p>
+        <p>XP: <span id="xp">0</span> / <span id="xpToNext">100</span></p>
+        <p>HP: <span id="hp">100</span> / <span id="maxHp">100</span></p>
+        <p>MP: <span id="mp">30</span> / <span id="maxMp">30</span></p>
+      </div>
+    </header>
 
+    <section class="actions">
+      <button id="exploreBtn">Explorar</button>
+      <button id="fightBtn">Combater Inimigo</button>
+      <button id="usePotionBtn">Usar Poção</button>
+    </section>
+
+    <section class="log">
+      <h2>Log de Ações</h2>
+      <div id="logArea"></div>
+    </section>
+
+    <section class="inventory">
+      <h2>Inventário</h2>
+      <ul id="inventoryList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
